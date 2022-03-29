@@ -1,0 +1,102 @@
+html {
+    background: url(../../img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box {
+    position: absolute;
+    width: 1700px;
+    height: 700px;
+
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #9ab8b8;
+    background-size: 100%;
+    border: #000000 solid 3px;
+    border-radius: 30px;
+}
+
+.text {
+    position: absolute;
+    margin: 0;
+    left: 25px;
+    top: 25px;
+    font-size: 35px;
+    font-family: PoetsenOne;
+    color: #000000;
+}
+
+.text2 {
+    width: 1600px;
+    margin-top: 120px;
+    margin-left: 20px;
+    font-family: Offside;
+    font-size: 25px;
+}
+
+input[id=email] {
+    font-size: 20px;
+    padding: 5px;
+}
+
+button[id=copy_button] {
+    padding: 10px;
+    
+    background: #000000;
+    border-radius: 10px;
+    border: 0;
+
+    font-family: PoetsenOne;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.boxLine {
+    position: absolute;
+    width: 100%;  
+    top: 90px;
+    
+    border: 1px solid #000000;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 260px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -130px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

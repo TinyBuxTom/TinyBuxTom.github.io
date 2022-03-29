@@ -1,0 +1,264 @@
+html {
+    background: url(../../img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.centerBox {
+    position: relative;
+    width: 1700px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.box {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    top: 480px;
+    margin-top: -200px;
+
+    background: #619190;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+.line {
+    position: absolute;
+    width: 345px;
+    height: 0px;
+    top: 60px;
+    
+    border: 1px solid #000000;
+}
+
+.text {
+    position: absolute;
+    width: 350px;
+    height: 60px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    font-family: PoetsenOne;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.logo {
+    position: absolute;
+    width: 340px;
+    height: 60px;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2 {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    
+    background: #000000;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Offside;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+}
+
+
+/* Box Education */
+
+.box.education {
+    left: 0px;
+}
+
+.logo.penta {
+    transform: scale(1.08);
+    top: 120px;
+    left: 20px;
+}
+
+.logo.HR {
+    transform: scale(0.92);
+    top: 250px;
+}
+
+
+/* Box Projects */
+
+.box.projects {
+    left: 450px;
+}
+
+.slideShowBox {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #000;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slowFade .slide img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 32s infinite;
+            animation: slowFade 32s infinite;
+}
+
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+}
+
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
+}
+
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+}
+
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+
+/* Box About Me */
+
+.box.aboutMe {
+    left: 900px;
+}
+
+.pictureAboutMe {
+    position: absolute;
+    width: 35%;
+    top: 70px;
+    left: 60%;
+}
+
+.textBoxAboutMe {
+    position: absolute;
+    width: 320px;
+    left: 15px;
+    top: 200px;
+    margin: 0%;
+
+    font-family: Offside;
+    font-size: 1.2rem;
+}
+
+.textBoxAboutMeTitle {
+    position: absolute;
+    font-size: 1.4rem;
+    top: -120px;
+    width: 200px;
+}
+
+
+/* Box Quick Access */
+
+.box.quickAccess {
+    height: 200px;
+    top: 450px;
+    left: 100%;
+    margin-left: -350px;
+}
+
+.cvIcon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    top: 95px;
+    left: 20px;
+}
+
+.button2.download {
+    left: 80px;
+    top: 95px;
+}
+
+
+/* Box Contact */
+
+.box.contact {
+    height: 200px;
+    top: 720px;
+    left: 100%;
+    margin-left: -350px;
+}
+
+.button2.eMail {
+    width: 320px;
+    top: 95px;
+    left: 15px;
+    font-size: 0.9rem;
+}
+
+
+/* Effects: */
+
+.logo.penta:hover {
+    transform: scale(1.15);
+}
+
+.logo.HR:hover {
+    transform: scale(0.99)
+}
+
+.button2.download:hover {
+    transform: scale(1.10);
+}

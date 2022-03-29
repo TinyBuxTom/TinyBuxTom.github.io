@@ -1,0 +1,107 @@
+@font-face {
+    font-family: PoetsenOne;
+    src: url(../../fonts/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Offside;
+    src: url(../../fonts/offside.regular.ttf);
+}
+
+.header {
+    position: absolute;
+    width: 1600px;
+    height: 100px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #E8E7E7;
+    background-size: 100%;
+}
+
+.title {
+    position: absolute;
+    left: 30px;
+    bottom: 2px;
+
+    font-family: PoetsenOne;
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.button {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    top: 20px;
+
+    background: #8CBCC7;
+    border-radius: 10px;
+    margin-left: -75px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Offside;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.button.home {
+    left: 25%;
+}
+
+.button.education {
+    left: 37.5%
+}
+
+.button.projects {
+    left: 50%;
+}
+
+.button.aboutMe {
+    left: 62.5%
+}
+
+.button.contact {
+    left: 75%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.linkedInButton {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 15%;
+    right: 2%;
+}
+
+/* Effects: */
+
+.title:hover {
+    /* animation: title 4s infinite; */
+    transform: skewX(10deg);
+}
+
+.button:hover {
+    transform: scale(1.20);
+}
+
+@keyframes title {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(359deg);
+    }
+}
+
+.linkedInButton:hover {
+    transform: scale(1.20);
+}

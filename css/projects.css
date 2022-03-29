@@ -1,0 +1,138 @@
+html {
+    background: url(../../img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.centerBox {
+    position: relative;
+    width: 1700px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box {
+    position: absolute;
+    width: 450px;
+    height: 700px;
+    top: 180px;
+
+    background: #9ab8b8;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+.boxLine {
+    position: absolute;
+    width: 100%;  
+    top: 60px;
+    
+    border: 1px solid #000000;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    font-size: 2rem;
+    font-family: PoetsenOne;
+    color: #000000;
+}
+
+.text2 {
+    position: absolute;
+    width: 95%;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 23px;
+    font-family: Offside;
+    color: #000000;
+}
+
+.button2 {
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    left: 50%;
+    margin-left: -40%;
+
+    background: #000000;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Offside;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+}
+
+.button2:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Project 2 */
+
+.box.p2 {
+    left: 0%;
+}
+
+.button2.p2 {
+    top: 250px;
+}
+
+.image.p2 {
+    top: 315px;
+    width: 80%;
+}
+
+/* Project 34 */
+
+.box.p34 {
+    left: 50%;
+    margin-left: -225px;
+}
+
+.button2.p34 {
+    top: 250px;
+}
+
+.image.p34 {
+    top: 315px;
+    width: 80%;
+}
+
+/* Project 56 */
+
+.box.p56 {
+    left: 100%;
+    margin-left: -450px;
+}
+
+.button2.p56 {
+    top: 305px;
+}
+
+.image.p56 {
+    top: 370px;
+    width: 68%;
+}
