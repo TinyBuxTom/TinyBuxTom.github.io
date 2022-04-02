@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,
-        initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tom's Portfolio - Home</title>
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/topbar.css">
+        <script src="javascript/copy_to_clipboard.js"></script>
     </head>
 
     <header>
@@ -48,11 +48,9 @@
                 </div>
             </a>
 
-            <div class="linkedInButton">
-                <a href="https://www.linkedin.com/in/tom-van-pelt/" target="_blank">
-                    <img src="img/linkedin_logo_transparent.png" alt="Tom's LinkedIn">
-                </a>
-            </div>
+             <a class="linkedInButton" href="https://www.linkedin.com/in/tom-van-pelt/" target="_blank">
+                <img src="img/linkedin_logo_transparent.png" alt="Tom's LinkedIn">
+            </a>
         </div>
     </header>
 
@@ -62,31 +60,23 @@
                 <div class="line"></div>
 
                 <a href="education.html">
-                    <div class="text">
-                        <h3>Education</h3>
-                    </div>
+                    <h3 class="text">Education</h3>
                 </a>
 
-                <div class="logo penta">
-                    <a href="https://jl.penta.nl" target="_blank">
-                        <img src="img/logo_jacob_transparent.png" alt="Penta College - Jacob van Liesveldt">
-                    </a>
-                </div>
+                <a class="logo penta" href="https://jl.penta.nl" target="_blank">
+                    <img src="img/logo_jacob_transparent.png" alt="Penta College - Jacob van Liesveldt">
+                </a>
                 
-                <div class="logo HR">
-                    <a href="https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/technische-informatica/voltijd/" target="_blank">
-                        <img src="img/HR_logo_transparent.png" alt="Hogeschool Rotterdam">    
-                    </a>
-                </div>
+                <a class="logo HR" href="https://www.hogeschoolrotterdam.nl/opleidingen/bachelor/technische-informatica/voltijd/" target="_blank">
+                    <img src="img/HR_logo_transparent.png" alt="Hogeschool Rotterdam">    
+                </a>
             </div>
 
             <div class="box projects">
                 <div class="line"></div>
 
                 <a href="projects.html">
-                    <div class="text">
-                        <h3>Projects</h3>
-                    </div>
+                    <h3 class="text">Projects</h3>
                 </a>
 
                 <div class="slideShowBox">
@@ -115,41 +105,32 @@
                 <div class="line"></div>
 
                 <a href="about_me.html">
-                    <div class="text">
-                        <h3>About Me</h3>
-                    </div>
+                    <h3 class="text">About Me</h3>
                 </a>
 
-                <div class="pictureAboutMe">
-                    <img src="img/IMG_3303.JPG">
-                </div>
+                <img class="pictureAboutMe" src="img/IMG_3303.JPG">
 
                 <div class="textBoxAboutMe">
-                    <div class="textBoxAboutMeTitle">
-                        <p><b>Hi!</b></p>
-                        <p><b>I'm Tom van Pelt</b></p>
-                    </div>
+                    <p class="textBoxAboutMeTitle"> 
+                        <b>Hi! <br>
+                        I'm Tom van Pelt</b>
+                    </p>    
 
-                    <p>Student Computer Engineering. I <b>continue</b> where others stop!</p>
-                    <p>Skills: Python, Java, Networking, Scrum, Raspberry Pi, Arduino, and more... </p>
+                    <p> Student Computer Engineering. <br>
+                        I <b>continue</b> where others stop!</p>
+                    <p> Skills: Python, Java, Networking, Scrum, Raspberry Pi, Arduino, and more... </p>
                 </div>
             </div>
 
             <div class="box quickAccess">
                 <div class="line"></div>
 
-                <div class="text">
-                    <h3>Quick Access</h3>
-                </div>
+                <h3 class="text">Quick Access</h3>
 
-                <div class="cvIcon">
-                    <img src="img/cv_icon_transparent.png" alt="">
-                </div>
+                <img class="cvIcon" src="img/cv_icon_transparent.png">
 
-                <a href="img/background1.jpg" download>
-                    <div class="button2 download">
-                        <h2>Download CV</h2>
-                    </div>
+                <a href="cv.html">
+                    <button class="button2 viewCV" type="button"><b>View CV</b></button>
                 </a>
             </div>
 
@@ -157,14 +138,12 @@
                 <div class="line"></div>
 
                 <a href="contact.html">
-                    <div class="text">
-                        <h3>Contact</h3>
-                    </div>
+                    <h3 class="text">Contact</h3>
                 </a>
 
-                <div class="button2 eMail">
-                    <h2>tomtcvanpelt@gmail.com</h2>
-                </div>
+                <a href="mailto:tomtcvanpelt@gmail.com">
+                    <button class="button2 eMail" type="button"><b>tomtcvanpelt@gmail.com</b></button>
+                </a>
             </div>
         </div>
     </body>

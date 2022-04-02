@@ -55,6 +55,10 @@ button[id=copy_button] {
     color: #FFFFFF;
 }
 
+button[id=copy_button]:hover {
+    transform: scale(1.05);
+}
+
 .boxLine {
     position: absolute;
     width: 100%;  
@@ -99,4 +103,16 @@ button[id=copy_button] {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+.imgButton {
+    display: table-column;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.imgButton:hover {
+    transform: scale(1.08);
 }

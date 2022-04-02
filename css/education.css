@@ -6,7 +6,7 @@ html {
 }
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 26px;
 }
 
 .box {
@@ -30,7 +30,7 @@ h3 {
     height: 50%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.2rem;
+    font-size: 20px;
     font-family: Offside;
 }
 

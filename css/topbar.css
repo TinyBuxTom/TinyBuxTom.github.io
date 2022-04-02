@@ -24,9 +24,10 @@
     position: absolute;
     left: 30px;
     bottom: 2px;
+    margin: 0;
 
     font-family: PoetsenOne;
-    font-size: 1.25rem;
+    font-size: 20px;
     color: #000000;
 }
 
@@ -44,7 +45,7 @@
     align-items: center;
     justify-content: center;
     font-family: Offside;
-    font-size: 1rem;
+    font-size: 16px;
     color: #000000;
 }
 

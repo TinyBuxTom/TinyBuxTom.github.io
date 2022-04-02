@@ -46,7 +46,7 @@ html {
     margin: 0;
 
     font-family: PoetsenOne;
-    font-size: 2rem;
+    font-size: 30px;
     color: #000000;
 }
 
@@ -68,15 +68,16 @@ html {
     
     background: #000000;
     border-radius: 10px;
+    border: 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-family: Offside;
-    font-style: normal;
-    font-size: 1.1rem;
     color: #FFFFFF;
+
+    cursor: pointer;
 }
 
 
@@ -197,12 +198,12 @@ html {
     margin: 0%;
 
     font-family: Offside;
-    font-size: 1.2rem;
+    font-size: 19px;
 }
 
 .textBoxAboutMeTitle {
     position: absolute;
-    font-size: 1.4rem;
+    font-size: 21px;
     top: -120px;
     width: 200px;
 }
@@ -226,9 +227,10 @@ html {
     left: 20px;
 }
 
-.button2.download {
+.button2.viewCV {
     left: 80px;
     top: 95px;
+    font-size: 28px;
 }
 
 
@@ -245,9 +247,63 @@ html {
     width: 320px;
     top: 95px;
     left: 15px;
-    font-size: 0.9rem;
+    font-size: 22px;
 }
 
+.copy_email {
+    position: absolute;
+    display: inline-block;
+    width: 320px;
+    height: 50px;
+    top: 95px;
+    left: 15px;
+    
+    background: #000000;
+    border-radius: 10px;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Offside;
+    font-style: normal;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+  
+.copy_email .copy_email_text {
+    visibility: hidden;
+    width: 260px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -130px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.copy_email .copy_email_text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.copy_email:hover .copy_email_text {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* Effects: */
 
@@ -259,6 +315,6 @@ html {
     transform: scale(0.99)
 }
 
-.button2.download:hover {
-    transform: scale(1.10);
+.button2:hover {
+    transform: scale(1.06);
 }
