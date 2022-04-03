@@ -43,10 +43,38 @@ h3 {
 }
 
 .image {
+    display: inline-flex;
+}
+
+.image.penta {
     width: 400px;
 }
 
-.image:hover {
+.image.hr {
+    width: 400px;
+}
+
+.image.python {
+    width: 300px;
+    margin-left: 390px;
+}
+
+.image.c {
+    margin-left: 40px;
+    width: 60px;
+}
+
+.image.java {
+    margin-left: 40px;
+    width: 40px;
+}
+
+.image.arduino {
+    margin-left: 40px;
+    width: 100px;
+}
+
+.image[id=hover]:hover {
     transform: scale(1.07);
 }
 

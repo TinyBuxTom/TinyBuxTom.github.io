@@ -35,11 +35,12 @@ html {
 }
 
 .text {
-    position: absolute;
-    width: 350px;
+    position: absolute; 
+    width: 350px; 
     height: 60px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,10 +244,22 @@ html {
     margin-left: -350px;
 }
 
+.contactBoxText {
+    position: absolute;
+    top: 50px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: Offside;
+    font-size: 20px;
+}
+
 .button2.eMail {
     width: 320px;
-    top: 95px;
-    left: 15px;
+    top: 130px;
+    left: 50%;
+    margin-left: -160px;
     font-size: 22px;
 }
 
@@ -316,5 +329,5 @@ html {
 }
 
 .button2:hover {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
